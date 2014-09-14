@@ -46,4 +46,5 @@ var uploadSketch = function() {
     value = value.replace(/(\r\n|\n|\r)/gm,'\n');
     console.log('upload sketch', value);
     // make sure that the value uploads with \n
+    RootTree.run('upload_arduino', {args: value})
 };
