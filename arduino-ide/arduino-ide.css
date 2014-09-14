@@ -5,6 +5,13 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     text-rendering: optimizeLegibility;
     height:100%;
+    background: #3C3B37
+}
+h1 {
+    color: #F5EDCE;
+    font-size: 20pt;
+    padding: 1em;
+    font-weight: 600;
 }
 /* missing from pure import. fix this later */
 .pure-g {
@@ -21,20 +28,22 @@ display: -ms-flexbox;
 .tutorials-container {
     background: #00A1A6;
 }
-.tutorials-container > .content {
-    padding: 1em;
-}
 .tutorials-container h2 {
     font-weight: 600;
     font-size: 16pt;
     color: #000;
     width: 100%;
-    padding: 1em 0;
+    padding: 1em;
 }
 .tutorials-container ol {
-    list-style: decimal outside;
+    list-style: decimal inside;
     color: #fff;
-    margin-left: 2em;
+}
+.tutorials-container li {
+    padding: 0.25em 1em 0.25em 2em;
+}
+.tutorials-container li.active {
+    background: rgba(0,0,0,0.2);
 }
 .tutorials-container a {
     color: #fff;
@@ -42,6 +51,12 @@ display: -ms-flexbox;
     line-height: 1.4em;
     font-weight: 500;
     font-size: 12pt;
+}
+.tutorials-container a[target=_blank] {
+    color: #20E5DA;
+}
+.tutorials-container a[target=_blank]:hover {
+    text-decoration: none;
 }
 .tutorials-container a:hover {
     color: #CDF6F7;
@@ -54,7 +69,7 @@ button {
     color: #fff;
     background: #00A1A6;
     border: none;
-    margin: 1em;
+    margin: 1em 0em 1em 1em;
     padding: 0.5em;
     font-size: 10pt;
 }
