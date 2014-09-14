@@ -72,7 +72,7 @@ $(document).ready(function() {
 });
 
 var setupEnvironment = function() {
-    console.log('setup environment');
+    console.log('setup environment not yet implemented');
 };
 
 var uploadSketch = function() {
