@@ -1,5 +1,60 @@
+html {
+    height:100%;
+}
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    height:100%;
+}
+/* missing from pure import. fix this later */
+.pure-g {
+display: -webkit-flex;
+-webkit-flex-flow: row wrap;
+display: -ms-flexbox;
+-ms-flex-flow: row wrap;
+}
 .CodeMirror {
     border: 1px solid #eee;
     line-height: 1.3;
     height: 500px;
+}
+.tutorials-container {
+    background: #00A1A6;
+}
+.tutorials-container > .content {
+    padding: 1em;
+}
+.tutorials-container h2 {
+    font-weight: 600;
+    font-size: 16pt;
+    color: #000;
+    width: 100%;
+    padding: 1em 0;
+}
+.tutorials-container ol {
+    list-style: decimal outside;
+    color: #fff;
+    margin-left: 2em;
+}
+.tutorials-container a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-size: 12pt;
+}
+.tutorials-container a:hover {
+    color: #CDF6F7;
+    text-decoration: underline;
+}
+.editor-container {
+    background: #006469;
+}
+button {
+    color: #fff;
+    background: #00A1A6;
+    border: none;
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 10pt;
 }
