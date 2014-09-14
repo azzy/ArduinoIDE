@@ -5,7 +5,7 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     text-rendering: optimizeLegibility;
     height:100%;
-    background: #3C3B37
+    background: #3C3B37;
 }
 h1 {
     color: #F5EDCE;
@@ -27,11 +27,13 @@ display: -ms-flexbox;
 }
 .tutorials-container {
     background: #00A1A6;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    z-index:2;
 }
 .tutorials-container h2 {
     font-weight: 600;
     font-size: 16pt;
-    color: #000;
+    color: #3C3B37;
     width: 100%;
     padding: 1em;
 }
@@ -64,6 +66,8 @@ display: -ms-flexbox;
 }
 .editor-container {
     background: #006469;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    z-index:1;
 }
 button {
     color: #fff;
@@ -72,4 +76,51 @@ button {
     margin: 1em 0em 1em 1em;
     padding: 0.5em;
     font-size: 10pt;
+    cursor: pointer;
+}
+button:hover {
+background-color: #008D91;
+-webkit-transition: background-color 300ms ease-out;
+-moz-transition: background-color 300ms ease-out;
+transition: background-color 300ms ease-out;
+}
+.tutorial-text-container {
+    background: #fafafa;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    z-index: 2;
+    line-height: 1.4em;
+}
+.tutorial-text-container > .content {
+    padding: 1.5em;
+}
+.tutorial-text {
+    height: 80%;
+    min-height:300px;
+}
+.tutorial-text-container button {
+    margin: 1em 0;
+    padding: 0.75em;
+    font-size: 12pt;
+    border-radius: 4px;
+}
+.button--prev {
+    background: #BDB9AC;
+}
+.button--prev:hover {
+    background: #A19E92;
+}
+.button--reveal {
+    background: #F2C81D;
+    float: right;
+}
+.button--reveal:hover {
+    background: #E6B800;
+}
+code {
+    font-family: Consolas,"courier new", monospace;
+    background: #eee;
+    padding: 0.25em;
+    border: 1px solid #ccc;
+    white-space: pre;
+    display:block;
 }

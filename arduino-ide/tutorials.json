@@ -1,9 +1,14 @@
-var editor; // to do make this not a global lolz
-var tutorials = [{
+[{
     name: 'Bare Minimum',
     help_text:"The bare minimum of code needed to start an Arduino sketch.",
     url: "http://arduino.cc/en/Tutorial/BareMinimum",
     code:"void setup() {\n  // put your setup code here, to run once:\n\n}\n\nvoid loop() {\n  // put your main code here, to run repeatedly: \n  \n}\n",
+    text: ["<p>The first thing any Arduino script needs is the void setup() method. This method gets called as your sketch (.ino file) begins to run. It is only called once, so it makes sense to put initialization data in here (for example, open a connection with the computer).</p>",
+	   "<p>To begin, write the following:<code>void setup(){\n}</code></p>",
+	   "<p>It makes sense that the setup has a return type of void -- it's the first thing that's run, so what's there to save the return value?</p>",
+	   "<p>The next main component you need is the void loop() method. This method is run continuously after your setup method is called. Whether you're checking the status of a button, or for unread emails in your inbox, the bulk of the logic will go in here.</p>",
+	   "<p>The last bit of code to write:<code>void loop(){\n}</code></p>",
+	   "<p>That's it! Here you have the majority of the skeleton of an Arduino file. In future tutorials, we'll go more into depth on how you can really expand the usage of these two functions.</p>"]
 }, {
     name: 'Blink',
     url: "http://arduino.cc/en/Tutorial/Blink",
